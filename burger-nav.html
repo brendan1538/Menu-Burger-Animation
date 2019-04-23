@@ -1,0 +1,34 @@
+<style>
+  .burger {
+    position: fixed;
+    top: 10%;
+    right: 50%;
+    width: 2.5rem;
+    transform-origin: center;
+    transition: 1s;
+  }
+
+  .burger:hover {
+    cursor: pointer;
+  }
+
+  .burger li {
+    border: 2px solid #2c343a;
+    width: 2.5rem;
+    list-style: none;
+    margin-top: 0.4rem;
+    transition: 0.3s;
+  }
+
+  .burger #line_2 {
+    transition: 0.25s;
+  }
+</style>
+
+<div class="burger collapsed" id="burger" onclick="toggleBurger()">
+  <li id="line_1"></li>
+  <li id="line_2"></li>
+  <li id="line_3"></li>
+</div>
+
+<script src="burger-nav.js"></script>
